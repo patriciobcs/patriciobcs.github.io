@@ -8,9 +8,11 @@
 }
 
 .dark-mode .notion-code {
-  background-color: rgba(17, 24, 39, 1);
-  border-color: rgba(55, 65, 81, 1);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: saturate(180%) blur(8px);
+  border: none;
 }
+
 .notion code {
   color: rgba(31, 41, 55, 1);
   border: 0 none !important;
@@ -23,15 +25,15 @@
 }
 
 .dark-mode .notion .notion-inline-code {
-  background: rgb(71,76,80) !important;
+  background: rgb(71, 76, 80) !important;
   color: #ff4081;
-  padding: .2em .4em !important;
+  padding: 0.2em 0.4em !important;
 }
 
 .light-mode .notion .notion-inline-code {
   color: #ff4081;
-  background: rgba(55,53,47, .1) !important;
-  padding: .2em .4em !important;
+  background: rgba(55, 53, 47, 0.1) !important;
+  padding: 0.2em 0.4em !important;
 }
 
 .token.cdata,

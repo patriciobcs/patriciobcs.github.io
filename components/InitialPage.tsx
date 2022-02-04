@@ -270,11 +270,8 @@ export const InitialPage: React.FC<types.PageProps> = ({
         mapPageUrl={siteMapPageUrl}
         mapImageUrl={mapNotionImageUrl}
         searchNotion={searchNotion}
-        pageFooter={comments}
-        pageAside={pageAside}
-        footer={
-          <div>
-            <div className="notion-collection notion-external-collection">
+        pageFooter={<div>
+            <div className="notion-collection pt-10">
               <div className="notion-collection-header">
                 <div className="notion-collection-header-title">
                   Projects Implementations
@@ -290,6 +287,7 @@ export const InitialPage: React.FC<types.PageProps> = ({
             />
           </div>
         }
+        pageAside={pageAside}
       />
     </TwitterContextProvider>
   )

@@ -7,6 +7,11 @@
  * places to add some flare.
  */
 
+:root {
+  --fg-color: black;
+  --fg-color-6: black;
+}
+
 .notion {
   --notion-max-width: 900px;
   --notion-header-height: 54px;
@@ -95,7 +100,7 @@
 }
 
 .notion-collection-card-cover {
-  border-radius: 16px 16px 0 0;
+  border-radius: 16px;
   overflow: hidden;
   box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
 }
@@ -360,4 +365,26 @@
 
 .notion-table-of-contents-item {
   white-space: normal;
+}
+
+.notion-page-title-text {
+  white-space: normal;
+}
+
+.notion-board-view {
+  padding-left: 0 !important;
+}
+
+.notion-collection-header {
+  padding: 4px 2px !important;
+}
+
+.notion-collection {
+  max-width: 100% !important;
+}
+
+@media (min-width: 1200px) {
+  .notion-page-scroller {
+    padding-top: 1rem;
+  }
 }

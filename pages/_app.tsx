@@ -1,3 +1,5 @@
+import 'tailwindcss/tailwind.css'
+
 // global styles shared across the entire site
 import 'styles/global.css'
 
@@ -42,6 +44,7 @@ import * as Fathom from 'fathom-client'
 
 import * as THREE from 'three';
 import BIRDS from 'vanta/dist/vanta.fog.min'
+import useDarkMode from 'use-dark-mode'
 
 if (typeof window !== 'undefined') {
   bootstrap()
@@ -49,6 +52,7 @@ if (typeof window !== 'undefined') {
 
 export default function App({ Component, pageProps }) {
   const router = useRouter()
+  const darkMode = useDarkMode(false, { classNameDark: 'dark-mode' })
 
   React.useEffect(() => {
     if (fathomId) {
@@ -69,7 +73,8 @@ export default function App({ Component, pageProps }) {
   const [vantaEffect, setVantaEffect] = useState(null)
   const myRef = useRef(null)
   useEffect(() => {
-    if (!vantaEffect) {
+    console.log(vantaEffect);
+    if (darkMode.value === true && !vantaEffect) {
       setVantaEffect(BIRDS({
         el: myRef.current,
         THREE: THREE,
@@ -86,12 +91,12 @@ export default function App({ Component, pageProps }) {
         speed: 2.20,
         zoom: 0.80
       }))
-    }
+    } else if (darkMode.value === false && vantaEffect) setVantaEffect(null);
     return () => {
       // @ts-ignore
       if (vantaEffect) vantaEffect.destroy()
     }
-  }, [vantaEffect])
+  }, [vantaEffect, darkMode.value])
 
   return (<div>
     <div ref={myRef} className="background"></div>
