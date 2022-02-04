@@ -46,8 +46,13 @@ import * as THREE from 'three';
 import BIRDS from 'vanta/dist/vanta.fog.min'
 import useDarkMode from 'use-dark-mode'
 
+import { setupHotjar } from '../helpers/utils';
+import reportWebVitals from '../helpers/reportWebVitals';
+
 if (typeof window !== 'undefined') {
-  bootstrap()
+  bootstrap();
+  reportWebVitals();
+  setupHotjar();
 }
 
 export default function App({ Component, pageProps }) {

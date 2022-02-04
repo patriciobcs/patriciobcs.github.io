@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import * as React from 'react'
 import * as types from 'lib/types'
-
-// TODO: remove duplication between PageHead and NotionPage Head
+import config from '../site.config';
 
 export const PageHead: React.FC<types.PageProps> = ({ site }) => {
   return (
@@ -23,6 +22,27 @@ export const PageHead: React.FC<types.PageProps> = ({ site }) => {
 
       <meta name='theme-color' content='#EB625A' />
       <meta property='og:type' content='website' />
+
+      {
+          config.googleAnalytics?.id && (
+              <script async src={`https://www.googletagmanager.com/gtag/js?id=${config.googleAnalytics.id}`}></script>
+          )
+      }
+      {
+          config.googleAnalytics?.id && (
+              <script>
+                  {
+                      `
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
+
+                      gtag('config', '${config.googleAnalytics.id}');
+                      `
+                  }
+              </script>
+          )
+      }
     </Head>
   )
 }

@@ -2,7 +2,6 @@ import React, { Fragment, useEffect, useRef, useState } from 'react'
 import { domain } from 'lib/config'
 import { resolveNotionPage } from 'lib/resolve-notion-page'
 import { InitialPage } from 'components'
-import reportWebVitals from '../helpers/reportWebVitals';
 
 export const getStaticProps = async () => {
   try {
@@ -23,5 +22,3 @@ export default function NotionDomainPage(props) {
       <InitialPage {...props} />
   )
 }
-
-reportWebVitals();

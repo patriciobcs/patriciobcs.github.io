@@ -57,7 +57,10 @@ module.exports = {
   // }
   pageUrlOverrides: null,
   googleAnalytics: {
-      // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
-      id: 'G-WLLBXXXX' // Please remove this and use your own tag id or keep it empty
+      id: 'G-RM224ZE4CK'
   },
+  hotjar: {
+    id: '2815279', //  Please remove this and use your own id or keep it empty
+    snippetVersion : 6
+  }
 }
