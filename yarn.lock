@@ -1836,13 +1836,6 @@
     "locate-path" "^5.0.0"
     "path-exists" "^4.0.0"
 
-"fix@^0.0.3":
-  "integrity" "sha1-JZnZ5yQitutTZL2JuvMcFFY2dno="
-  "resolved" "https://registry.npmjs.org/fix/-/fix-0.0.3.tgz"
-  "version" "0.0.3"
-  dependencies:
-    "pipe" "0.0.1"
-
 "flat-cache@^3.0.4":
   "integrity" "sha512-dm9s5Pw7Jc0GvMYbshN6zchCA9RgQlzzEZX3vylR9IqFfS8XciblUXOKfW6SiuJ0e13eDYZoZV5wdrev7P3Nwg=="
   "resolved" "https://registry.npmjs.org/flat-cache/-/flat-cache-3.0.4.tgz"
@@ -3523,11 +3516,6 @@
   "integrity" "sha1-clVrgM+g1IqXToDnckjoDtT3+HA="
   "resolved" "https://registry.npmjs.org/pinkie/-/pinkie-2.0.4.tgz"
   "version" "2.0.4"
-
-"pipe@0.0.1":
-  "integrity" "sha1-aj6pjLAmq9JT5ddFGNySLE4Z2vI="
-  "resolved" "https://registry.npmjs.org/pipe/-/pipe-0.0.1.tgz"
-  "version" "0.0.1"
 
 "pkg-dir@^4.1.0":
   "integrity" "sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ=="

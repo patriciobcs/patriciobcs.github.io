@@ -33,7 +33,6 @@
     "daisyui": "^1.12.1",
     "date-fns": "^2.25.0",
     "fathom-client": "^3.0.0",
-    "fix": "^0.0.3",
     "gh-pages": "^3.2.3",
     "got": "^11.8.2",
     "isomorphic-unfetch": "^3.1.0",
