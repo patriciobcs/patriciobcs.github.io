@@ -370,21 +370,3 @@
 .notion-page-title-text {
   white-space: normal;
 }
-
-.notion-board-view {
-  padding-left: 0 !important;
-}
-
-.notion-collection-header {
-  padding: 4px 2px !important;
-}
-
-.notion-collection {
-  max-width: 100% !important;
-}
-
-@media (min-width: 1200px) {
-  .notion-page-scroller {
-    padding-top: 1rem;
-  }
-}
